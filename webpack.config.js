@@ -12,13 +12,13 @@ module.exports = {
 		filename: '[name].[chunkhash].js'
 	},
 	devtool: 'eval-source-map',
-	stats: 'errors-only',
-	target: 'node',
+	// stats: 'errors-only',
+	// target: 'node',
 	externals: [nodeExternals()],
 	module: {
 		rules: [
 			{
-				test: /\.js$/,
+				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
 				use: {
 					loader: 'babel-loader',
