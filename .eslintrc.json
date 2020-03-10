@@ -16,6 +16,13 @@
 	"rules": {
 		"no-console": "off"
 	},
+	"settings": {
+		"react": {
+			"pragma": "react",
+			"version": "detect",
+			"flowVersion": "0.119"
+		}
+	},
 	"env": {
 		"browser": true,
 		"node": true,
