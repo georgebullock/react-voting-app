@@ -14,7 +14,8 @@
 	],
 	"plugins": ["flowtype"],
 	"rules": {
-		"no-console": "off"
+		"no-console": "off",
+		"react/react-in-jsx-scope": "off"
 	},
 	"settings": {
 		"react": {
