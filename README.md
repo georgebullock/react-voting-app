@@ -1,6 +1,7 @@
 # REACT VOTING APP
 
-This project is a work in progress. This README.md is a skeleton for the project's future README.md
+This project is a work in progress. This README.md is a skeleton for the
+project's future README.md
 
 ### OVERVIEW
 
@@ -25,7 +26,7 @@ This project is a work in progress. This README.md is a skeleton for the project
 ##### Step 1:
 
 ```bash
-git clone 
+git clone
 ```
 
 ##### Step 2:
@@ -42,8 +43,8 @@ yarn start
 
 > ⚠️ Warning: **The project requires node v12.6.0**.
 
-> 💡 Tip: If you're using nvm, you can
-> run `nvm use` to automatically switch to v12.6.0.
+> 💡 Tip: If you're using nvm, you can run `nvm use` to automatically switch to
+> v12.6.0.
 
 > 💡 Tip: Check out the `scripts` object (inside the `package.json`) for
 > additional commands.

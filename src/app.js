@@ -1,5 +1,11 @@
-// @flow
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './../src/app.scss';
-import { welcome } from './modules/welcome';
 
-console.log(welcome());
+class Product extends React.Component {
+	render() {
+		return <div>Hello, World</div>;
+	}
+}
+
+ReactDOM.render(<Product />, document.querySelector('#react-entry'));
