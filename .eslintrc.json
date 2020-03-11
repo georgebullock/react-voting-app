@@ -2,12 +2,27 @@
 	"parser": "babel-eslint",
 	"parserOptions": {
 		"ecmaVersion": 2019,
-		"sourceType": "module"
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
 	},
-	"extends": ["eslint:recommended", "eslint-config-prettier"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"eslint-config-prettier"
+	],
 	"plugins": ["flowtype"],
 	"rules": {
-		"no-console": "off"
+		"no-console": "off",
+		"react/react-in-jsx-scope": "off"
+	},
+	"settings": {
+		"react": {
+			"pragma": "react",
+			"version": "detect",
+			"flowVersion": "0.119"
+		}
 	},
 	"env": {
 		"browser": true,

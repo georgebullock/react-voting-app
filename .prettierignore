@@ -3,5 +3,6 @@ coverage
 dist
 build
 .build
+semantic-dist
 
 # Add additional files / globs here

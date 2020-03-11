@@ -5,3 +5,6 @@ dist
 # flow-typed annotations
 flow-typed/
 
+# semantic ui
+semantic-dist
+
