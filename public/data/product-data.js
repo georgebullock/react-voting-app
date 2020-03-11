@@ -1,4 +1,4 @@
-import { generateVoteCount } from '../../src/helpers/generate-vote-count';
+import { generateVoteCount } from '../../src/helpers/generate-vote-count/generate-vote-count';
 
 export const ProductData = [
 	{
