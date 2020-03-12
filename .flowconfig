@@ -14,6 +14,7 @@ module.file_ext=.jsx
 module.file_ext=.css
 module.file_ext=.scss
 module.name_mapper.extension='scss' -> 'empty/object'
+suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
 
 [strict]
 

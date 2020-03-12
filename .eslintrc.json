@@ -10,7 +10,8 @@
 	"extends": [
 		"eslint:recommended",
 		"plugin:react/recommended",
-		"eslint-config-prettier"
+		"eslint-config-prettier",
+		"plugin:flowtype/recommended"
 	],
 	"plugins": ["flowtype"],
 	"rules": {

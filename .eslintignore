@@ -2,9 +2,6 @@
 node_modules
 dist
 
-# flow-typed annotations
-flow-typed/
-
-# semantic ui
+# vendor
 semantic-dist
-
+flow-typed
