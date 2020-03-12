@@ -3,19 +3,17 @@ import React from 'react';
 import { ProductData } from './../../../public/data/product-data';
 import Product from './../Product/Product';
 
-type Props = {};
-
 type State = {
 	products: Array<Object>
 };
 
-class ProductList extends React.Component<Props, State> {
+class ProductList extends React.Component<{}, State> {
 	state: State = {
 		products: []
 	};
 
 	componentDidMount() {
-		const products = ProductData.sort((a, b) => {
+		const products: Array<Object> = ProductData.sort((a, b) => {
 			return b.votes - a.votes;
 		});
 
@@ -23,7 +21,7 @@ class ProductList extends React.Component<Props, State> {
 	}
 
 	handleUpVote = (productId: number) => {
-		const state = Object.assign({}, this.state);
+		const state: State = Object.assign({}, this.state);
 
 		state.products.map(product => {
 			if (product.id === productId) {
