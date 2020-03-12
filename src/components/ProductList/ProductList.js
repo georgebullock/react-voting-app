@@ -1,9 +1,16 @@
+//@flow
 import React from 'react';
 import { ProductData } from './../../../public/data/product-data';
 import Product from './../Product/Product';
 
-class ProductList extends React.Component {
-	state = {
+type Props = {};
+
+type State = {
+	products: Array<Object>
+};
+
+class ProductList extends React.Component<Props, State> {
+	state: State = {
 		products: []
 	};
 
@@ -15,7 +22,7 @@ class ProductList extends React.Component {
 		this.setState({ products: [...products] });
 	}
 
-	handleUpVote = productId => {
+	handleUpVote = (productId: number) => {
 		const state = Object.assign({}, this.state);
 
 		state.products.map(product => {
