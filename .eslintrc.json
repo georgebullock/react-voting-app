@@ -11,9 +11,10 @@
 		"eslint:recommended",
 		"plugin:react/recommended",
 		"eslint-config-prettier",
-		"plugin:flowtype/recommended"
+		"plugin:flowtype/recommended",
+		"plugin:jest-dom/recommended"
 	],
-	"plugins": ["flowtype"],
+	"plugins": ["flowtype", "jest-dom"],
 	"rules": {
 		"no-console": "off",
 		"react/react-in-jsx-scope": "off"
