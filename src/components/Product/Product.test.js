@@ -1,6 +1,6 @@
 // eslint-disable-next-line
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import Product from './Product';
 
@@ -46,38 +46,17 @@ describe('Rendering', () => {
 	});
 });
 
-// Describe Interactions
-describe('Interactions', () => {
-	test('It should be something deterministic', () => {
-		// Arrange - Setup your test
-		// Act - Take some action
-		// Assert - Determine if something specific is as expected
-	});
-});
-
 // Describe Events
 describe('Events', () => {
-	test('It should be something deterministic', () => {
+	test('It should have been called 1 time', () => {
 		// Arrange - Setup your test
-		// Act - Take some action
-		// Assert - Determine if something specific is as expected
-	});
-});
+		const props = createTestProps();
+		const { getByRole } = render(<Product {...props} />);
 
-// Describe Async Events
-describe('Async Events', () => {
-	test('It should be something', () => {
-		// Arrange - Setup your test
 		// Act - Take some action
-		// Assert - Determine if something specific is as expected
-	});
-});
+		fireEvent.click(getByRole('button'));
 
-// Network Request and Mocks
-describe('Network Requests and Mocks', () => {
-	test('It should be something', () => {
-		// Arrange - Setup your test
-		// Act - Take some action
 		// Assert - Determine if something specific is as expected
+		expect(props.onVoteClick).toHaveBeenCalledTimes(1);
 	});
 });

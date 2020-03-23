@@ -29,7 +29,12 @@ class Product extends React.Component<Props> {
 				</div>
 				<div className="middle aligned content">
 					<div className="header">
-						<a onClick={this.handleVoteClick} href="" className="link">
+						<a
+							onClick={this.handleVoteClick}
+							href=""
+							className="link"
+							role="button"
+						>
 							<i className="large caret up icon"></i>
 						</a>
 						{this.props.votes}
