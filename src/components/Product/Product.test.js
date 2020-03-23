@@ -4,52 +4,80 @@ import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import Product from './Product';
 
-test('It should render Product with the right props', () => {
-	const { container, getByText } = render(<Product />);
-	expect(getByText(/Submitted by:/i)).toBeInTheDocument();
-	expect(container).toMatchInlineSnapshot(`
-		<div>
-		  <div
-		    class="item"
-		  >
-		    <div
-		      class="image"
-		    >
-		      <img />
-		    </div>
-		    <div
-		      class="middle aligned content"
-		    >
-		      <div
-		        class="header"
-		      >
-		        <a
-		          class="link"
-		          href=""
-		        >
-		          <i
-		            class="large caret up icon"
-		          />
-		        </a>
-		      </div>
-		      <div
-		        class="description"
-		      >
-		        <a />
-		        <p />
-		      </div>
-		      <div
-		        class="extra"
-		      >
-		        <span>
-		          Submitted by:
-		        </span>
-		        <img
-		          class="ui avatar image"
-		        />
-		      </div>
-		    </div>
-		  </div>
-		</div>
-	`);
+const createTestProps = props => {
+	return {
+		// common props
+		id: `SKU-1000`,
+		productTitle: `Lightsaber`,
+		productDescription: 'A sword made of light.',
+		productImageUrl: `/productImageUrl`,
+		votes: 999,
+		userAvatarUrl: `/avatarImageUrl`,
+		onVoteClick: jest.fn(),
+
+		// override common props if necessary
+		...props
+	};
+};
+
+// Describe Rendering
+describe('Rendering', () => {
+	test('It should render the right props', () => {
+		// Arrange - Setup your test
+		const props = createTestProps();
+		const productID = props.id;
+
+		// Act - Take some action
+		const { getByText, getByAltText } = render(<Product {...props} />);
+
+		// Assert - Determine if something is as expected
+		expect(productID).toBe(`SKU-1000`);
+		expect(getByText(/Lightsaber/i)).toBeInTheDocument();
+		expect(getByText(/A sword made of light./i)).toBeInTheDocument();
+		expect(getByAltText(`product image`)).toHaveAttribute(
+			'src',
+			expect.stringMatching(`/productImageUrl`)
+		);
+		expect(getByText(`999`)).toBeInTheDocument();
+		expect(getByAltText(`user image`)).toHaveAttribute(
+			'src',
+			expect.stringMatching(`/avatarImageUrl`)
+		);
+	});
+});
+
+// Describe Interactions
+describe('Interactions', () => {
+	test('It should be something deterministic', () => {
+		// Arrange - Setup your test
+		// Act - Take some action
+		// Assert - Determine if something specific is as expected
+	});
+});
+
+// Describe Events
+describe('Events', () => {
+	test('It should be something deterministic', () => {
+		// Arrange - Setup your test
+		// Act - Take some action
+		// Assert - Determine if something specific is as expected
+	});
+});
+
+// Describe Async Events
+describe('Async Events', () => {
+	test('It should be something', () => {
+		// Arrange - Setup your test
+		// Act - Take some action
+		// Assert - Determine if something specific is as expected
+	});
+});
+
+// Network Request and Mocks
+describe('Network Requests and Mocks', () => {
+	test('It should be something', () => {
+		// Arrange - Setup your test
+		// Act - Take some action
+		// Assert - Determine if something specific is as expected
+	});
 });

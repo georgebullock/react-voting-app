@@ -5,10 +5,9 @@ type Props = {
 	id: number,
 	productTitle: string,
 	productDescription: string,
-	url: string,
+	productImageUrl: string,
 	votes: Function,
 	userAvatarUrl: string,
-	productImageUrl: string,
 	onVoteClick: Function
 };
 
@@ -26,7 +25,7 @@ class Product extends React.Component<Props> {
 		return (
 			<div className="item">
 				<div className="image">
-					<img src={this.props.productImageUrl} />
+					<img src={this.props.productImageUrl} alt="product image" />
 				</div>
 				<div className="middle aligned content">
 					<div className="header">
@@ -41,7 +40,11 @@ class Product extends React.Component<Props> {
 					</div>
 					<div className="extra">
 						<span>Submitted by:</span>
-						<img className="ui avatar image" src={this.props.userAvatarUrl} />
+						<img
+							className="ui avatar image"
+							src={this.props.userAvatarUrl}
+							alt="user image"
+						/>
 					</div>
 				</div>
 			</div>

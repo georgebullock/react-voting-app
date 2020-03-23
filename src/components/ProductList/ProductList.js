@@ -45,10 +45,9 @@ class ProductList extends React.Component<{}, State> {
 				id={product.id}
 				productTitle={product.title}
 				productDescription={product.description}
-				url={product.url}
+				productImageUrl={product.productImageUrl}
 				votes={product.votes}
 				userAvatarUrl={product.submitterAvatarUrl}
-				productImageUrl={product.productImageUrl}
 				onVoteClick={this.handleUpVote}
 			/>
 		));
