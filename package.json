@@ -1,7 +1,7 @@
 {
 	"name": "react-voting-app",
 	"version": "1.0.0",
-	"description": "React voting app is small react app that allows users to upvote products",
+	"description": "React voting app is a small react app that allows users to upvote products",
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack-dev-server --mode development",
