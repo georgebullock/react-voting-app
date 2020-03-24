@@ -1,7 +1,7 @@
 {
-	"name": "javascript-playground",
+	"name": "react-voting-app",
 	"version": "1.0.0",
-	"description": "JavaScript Playground is a project boilerplate I created for small, static, projects and practicing test-driven development.",
+	"description": "React voting app is a small react app that allows users to upvote products",
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack-dev-server --mode development",
@@ -21,13 +21,11 @@
 	},
 	"lint-staged": {
 		"*.js": [
-			"eslint --fix",
-			"git add"
+			"eslint --fix"
 		],
 		"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)": [
 			"prettier --write",
-			"jest --findRelatedTests",
-			"git add"
+			"jest --findRelatedTests"
 		]
 	},
 	"repository": {
@@ -54,6 +52,8 @@
 		"@babel/preset-env": "^7.8.6",
 		"@babel/preset-flow": "^7.8.3",
 		"@babel/preset-react": "^7.8.3",
+		"@testing-library/jest-dom": "^5.1.1",
+		"@testing-library/react": "^10.0.1",
 		"babel-eslint": "^10.1.0",
 		"babel-loader": "^8.0.6",
 		"clean-webpack-plugin": "^3.0.0",
@@ -61,6 +61,7 @@
 		"eslint": "^6.8.0",
 		"eslint-config-prettier": "^6.10.0",
 		"eslint-plugin-flowtype": "^4.6.0",
+		"eslint-plugin-jest-dom": "^2.0.1",
 		"eslint-plugin-react": "^7.19.0",
 		"flow-bin": "^0.119.1",
 		"html-webpack-plugin": "^3.2.0",
