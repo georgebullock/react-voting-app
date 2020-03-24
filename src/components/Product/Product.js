@@ -23,12 +23,12 @@ class Product extends React.Component<Props> {
 
 	render() {
 		return (
-			<div className="item">
+			<li className="item">
 				<div className="image">
 					<img src={this.props.productImageUrl} alt="product image" />
 				</div>
 				<div className="middle aligned content">
-					<div className="header">
+					<div data-testid="product" className="header">
 						<a
 							onClick={this.handleVoteClick}
 							href=""
@@ -52,7 +52,7 @@ class Product extends React.Component<Props> {
 						/>
 					</div>
 				</div>
-			</div>
+			</li>
 		);
 	}
 }

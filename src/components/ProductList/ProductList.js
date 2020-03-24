@@ -52,7 +52,7 @@ class ProductList extends React.Component<{}, State> {
 			/>
 		));
 
-		return <div className="ui unstackable items">{productComps}</div>;
+		return <ul className="ui unstackable items">{productComps}</ul>;
 	}
 }
 
