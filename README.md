@@ -1,9 +1,8 @@
 # REACT VOTING APP
 
-This project is a work in progress. This README.md is a skeleton for the
-project's future README.md
-
 ### OVERVIEW
+
+React Voting App is a small project that I completed to practice test-driven development with React. The project was inspired by a code challenge I encountered while reading Full-Stack React.
 
 ### PROJECT STACK
 
@@ -15,7 +14,7 @@ project's future README.md
 - Formatting via Prettier
 - Linting via ESLint
 - Type Checking via Flow
-- Unit Testing via Jest
+- Unit Testing via Jest and React Testing Library
 
 > ⚠️ Warning: The project uses husky and lint-staged to prevent you from
 > committing code that doesn't pass validation (i.e. formatting, linting, and
@@ -52,9 +51,15 @@ yarn start
 ### ADDITIONAL INFORMATION
 
 #### Project Motivation:
+In early 2020, I resigned from my first coding job and began systematically leveling my frontend skills. My focus was on React and testing. My aim was to get a job working full time on an SPA. 
+
+I needed a project that I could build quickly using the React I already knew and focus the majority of my time on applying what I was learning about testing.
 
 #### Project Status:
+This project is complete.
 
 #### Project Roadmap:
+No additonal features are planned.
 
 #### Known Issues:
+There are no known technical issues. If you find something, feel free to let me know, or send me a pull request.
