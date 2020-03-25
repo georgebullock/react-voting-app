@@ -26,7 +26,7 @@ project's future README.md
 ##### Step 1:
 
 ```bash
-git clone
+git clone git@github.com:georgebullock/react-voting-app.git
 ```
 
 ##### Step 2:
