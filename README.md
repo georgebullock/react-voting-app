@@ -2,7 +2,13 @@
 
 ### OVERVIEW
 
-React Voting App is a small project that I completed to practice test-driven development with React. I used [JavaScript Playground](https://github.com/georgebullock/javascript-playground), a boilerplate I created, to scaffold the project. The project was inspired by a code challenge I encountered while reading Full-Stack React. Styles were provided via Semantic UI. Everything else (i.e. configs, code, tests) I wrote myself from scratch.
+React Voting App is a small project that I completed to practice test-driven
+development with React. I used
+[JavaScript Playground](https://github.com/georgebullock/javascript-playground),
+a boilerplate I created, to scaffold the project. The project was inspired by a
+code challenge I encountered while reading Full-Stack React. Styles were
+provided via Semantic UI. Everything else (i.e. configs, code, tests) I wrote
+myself from scratch.
 
 ### PROJECT STACK
 
@@ -51,15 +57,24 @@ yarn start
 ### ADDITIONAL INFORMATION
 
 #### Project Motivation:
-In early 2020, I resigned from my first coding job and began systematically leveling my frontend skills. My focus was on React and testing. My aim was to get a job working full time on an SPA. 
 
-I needed a project that I could build quickly using the React I already knew and focus the majority of my time on applying what I was learning about testing (which was new to me at the time).
+In early 2020, I resigned from my first coding job and began systematically
+leveling my frontend skills. My focus was on React and testing. My aim was to
+get a job working full time on an SPA.
+
+I needed a project that I could build quickly using the React I already knew and
+focus the majority of my time on applying what I was learning about testing
+(which was new to me at the time).
 
 #### Project Status:
+
 This project is complete.
 
 #### Project Roadmap:
+
 No additonal features are planned.
 
 #### Known Issues:
-There are no known technical issues. If you find something, feel free to let me know, or send me a pull request.
+
+There are no known technical issues. If you find something, feel free to let me
+know, or send me a pull request.
